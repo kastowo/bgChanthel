@@ -1,0 +1,24 @@
+<workflow-app xmlns="uri:oozie:workflow:0.5" name="decfpaes256alphanum_Hgrid235">
+    <start to="hgrid"/>
+    <action name="hgrid">
+        <java>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>level1</value>
+                </property>
+            </configuration>
+            <main-class>sragen.encaes256_235</main-class>
+            <file>${nameNode}/user/baciro/jar/sragen/sragen.jar</file>
+            <capture-output/>
+        </java>
+        <ok to="end"/>
+        <error to="fail"/>
+    </action>
+    <kill name="fail">
+        <message>Workflow failed, error message[${wf:errorMessage(wf:lastErrorNode())}]</message>
+    </kill>
+    <end name="end"/>
+</workflow-app>

@@ -1,0 +1,25 @@
+{
+  "name": "hive",
+  "version": "1.0.0",
+  "description": "digunakan untuk koneksi ke hive",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@192.168.1.248:kulicoding/baciro_2.1.0.git"
+  },
+  "keywords": [
+    "hive",
+    "baciro-hive"
+  ],
+  "author": "danang kastowo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "thrift-hive": "0.0.7",
+    "yaml-config": "^0.3.0"
+  }
+}

@@ -1,0 +1,218 @@
+{
+   "base": {
+      "protocol": "http",
+      "pathname": "/"
+   },
+   "path": {
+      "GET": {
+         "users": {
+            "location": "%(apikey)s/user"
+         },
+         "user": {
+            "location": "%(apikey)s/user/%(user_id)d"
+         },
+         "groups": {
+            "location": "%(apikey)s/group"
+         },
+         "group": {
+            "location": "%(apikey)s/group/%(group_id)d"
+         },
+         "member": {
+            "location": "%(apikey)s/member/%(group_id)d"
+         },
+         "check_apikey":{
+            "location": "%(apikey)s/check_apikey"
+         },
+         "check_email":{
+            "location": "%(apikey)s/check_email/%(user_email)s"
+         },
+         "check_group_name":{
+            "location": "%(apikey)s/check_group_name"
+         },
+         "check_role_name":{
+            "location": "%(apikey)s/check_role_name"
+         },
+         "check_privilege_menu":{
+            "location": "%(apikey)s/check_privilege_menu"
+         },
+         "check_project_name":{
+            "location": "%(apikey)s/check_project_name"
+         },
+         "check_inventory_name":{
+            "location": "%(apikey)s/check_inventory_name"
+         },
+         "check_cluster_name":{
+            "location": "%(apikey)s/check_cluster_name"
+         },
+         "check_config_key":{
+            "location": "%(apikey)s/check_config_key/%(cluster_id)d"
+         },
+         "get_user_id":{
+           "location": "%(apikey)s/get_user_id" 
+         },
+         "get_group_id":{
+           "location": "%(apikey)s/get_group_id" 
+         },
+         "get_member_id":{
+           "location": "%(apikey)s/get_member_id" 
+         },
+         "get_role_id":{
+           "location": "%(apikey)s/get_role_id" 
+         },
+         "get_privilage_id":{
+           "location": "%(apikey)s/get_privilage_id" 
+         },
+         "get_project_id":{
+           "location": "%(apikey)s/get_project_id" 
+         },
+         "get_inventory_id":{
+           "location": "%(apikey)s/get_inventory_id" 
+         },
+         "get_cluster_id":{
+           "location": "%(apikey)s/get_cluster_id" 
+         },
+         "get_config_id":{
+           "location": "%(apikey)s/get_config_id" 
+         },
+         "get_compile_id":{
+           "location": "%(apikey)s/get_compile_id" 
+         },
+         "get_user_by_apikey":{
+           "location": "%(apikey)s/get_user_by_apikey" 
+         },
+         "roles": {
+            "location": "%(apikey)s/role"
+         },
+         "role": {
+            "location": "%(apikey)s/role/%(role_id)d"
+         },
+         "projectsByUser": {
+            "location": "%(apikey)s/project/user/%(user_id)d"
+         },
+         "projectByUser": {
+            "location": "%(apikey)s/project/%(project_id)d/user/%(user_id)d"
+         },
+         "projectsByGroup": {
+            "location": "%(apikey)s/project/group/%(group_id)d"
+         },
+         "projectByGroup": {
+            "location": "%(apikey)s/project/%(project_id)d/group/%(group_id)d"
+         },
+         "inventory": {
+            "location": "%(apikey)s/project/%(project_id)d/inventory/%(inventory_id)d"
+         },
+         "inventories": {
+            "location": "%(apikey)s/project/%(project_id)d/inventory"
+         },
+         "cluster": {
+            "location": "%(apikey)s/cluster/%(cluster_id)d"
+         },
+         "clusters": {
+            "location": "%(apikey)s/cluster"
+         },
+         "cluster_config": {
+            "location": "%(apikey)s/cluster/%(cluster_id)d/config/%(config_id)d"
+         },
+         "cluster_configs": {
+            "location": "%(apikey)s/cluster/%(cluster_id)d/config"
+         },
+         "compile": {
+            "location": "%(apikey)s/compile/%(compile_id)d"
+         }
+      },
+      "POST": {
+         "user": {
+            "location": "%(apikey)s/user"
+         },
+         "group": {
+            "location": "%(apikey)s/group"
+         },
+         "member": {
+            "location": "%(apikey)s/member"
+         },
+         "role": {
+            "location": "%(apikey)s/role"
+         },
+         "privilege": {
+            "location": "%(apikey)s/privilege/%(role_id)d"
+         },
+         "project": {
+            "location": "%(apikey)s/project/user/%(user_id)d"
+         },
+         "inventory": {
+            "location": "%(apikey)s/project/%(project_id)d/inventory"
+         },
+         "cluster": {
+            "location": "%(apikey)s/cluster"
+         },
+         "cluster_config": {
+            "location": "%(apikey)s/cluster/%(cluster_id)d/config"
+         },
+         "login": {
+            "location": "%(apikey)s/login"
+         },
+         "compile": {
+            "location": "%(apikey)s/compile"
+         }
+      },
+      "PUT": {
+         "user": {
+            "location": "%(apikey)s/user/%(user_id)d"
+         },
+         "group": {
+            "location": "%(apikey)s/group/%(group_id)d"
+         },
+         "member": {
+            "location": "%(apikey)s/member/%(member_id)d"
+         },
+         "role": {
+            "location": "%(apikey)s/role/%(role_id)d"
+         },
+         "privilege": {
+            "location": "%(apikey)s/privilege/%(privilege_id)d"
+         },
+         "projectByUser": {
+            "location": "%(apikey)s/project/%(project_id)d/user/%(user_id)d"
+         },
+         "projectShareGroup": {
+            "location": "%(apikey)s/project/%(project_id)d/share/%(group_id)d"
+         },
+         "cluster": {
+            "location": "%(apikey)s/cluster/%(cluster_id)d"
+         },
+         "cluster_config": {
+            "location": "%(apikey)s/cluster/%(cluster_id)d/config/%(config_id)d"
+         }
+
+      },
+      "DELETE": {
+         "user": {
+            "location": "%(apikey)s/user/%(user_id)d"
+         },
+         "group": {
+            "location": "%(apikey)s/group/%(group_id)d"
+         },
+         "member": {
+            "location": "%(apikey)s/member/%(member_id)d"
+         },
+         "role": {
+            "location": "%(apikey)s/role/%(role_id)d"
+         },
+         "project": {
+            "location": "%(apikey)s/project/%(project_id)d"
+         },
+         "inventory": {
+            "location": "%(apikey)s/inventory/%(inventory_id)d"
+         },
+         "cluster": {
+            "location": "%(apikey)s/cluster/%(cluster_id)d"
+         },
+         "cluster_config": {
+            "location": "%(apikey)s/cluster/%(cluster_id)d/config/%(config_id)d"
+         },
+         "cluster_configs": {
+            "location": "%(apikey)s/cluster/%(cluster_id)d/config"
+         }
+      }
+   }
+}

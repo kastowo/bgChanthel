@@ -1,0 +1,31 @@
+{
+  "name": "baciro_oozie",
+  "version": "1.0.0",
+  "description": "digunakan untuk generate xml dan submit job ke oozie",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@192.168.1.248:kulicoding/baciro_2.1.0.git"
+  },
+  "keywords": [
+    "baciro",
+    "gateway",
+    "baciro",
+    "gateway"
+  ],
+  "author": "kp247 ugm",
+  "license": "ISC",
+  "dependencies": {
+    "apiclient": "^0.2.5",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "getmac": "^1.2.1",
+    "hdfs247": "0.0.8",
+    "md5": "^2.2.1",
+    "xml-writer": "^1.6.0",
+    "yaml-config": "^0.3.0"
+  }
+}

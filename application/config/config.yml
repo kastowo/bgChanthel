@@ -1,0 +1,29 @@
+default:
+  user_management:
+    host: yava230.solusi247.com
+    port: 3001
+  project:
+    host: yava230.solusi247.com
+    port: 3002
+  generate_jar:
+    host: yava230.solusi247.com
+    port: 3004
+  cluster:
+    host: yava230.solusi247.com
+    port: 3003
+development:
+  user_management:
+    host: yava-177.solusi247.com
+    port: 2001
+  cluster:
+    host: yava-177.solusi247.com
+    port: 2002
+  project:
+    host: yava-177.solusi247.com
+    port: 2003
+  generate_jar:
+    host: yava-177.solusi247.com
+    port: 2004
+  baciro_oozie:
+    host: yava-177.solusi247.com
+    port: 2005
